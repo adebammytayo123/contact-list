@@ -22,7 +22,8 @@ class Contact extends Component {
 
   render() {
     const { id, name, email, phone } = this.props.contact;
-    const contactList = this.props.contacts
+    console.log(this.props.contact)
+    const contactList = this.props.contact
     const { showContactInfo } = this.state;
 
     return (
@@ -73,10 +74,6 @@ Contact.propTypes = {
 
 
 
-const mapStateToProps = (state) => ({
-  contacts: state.contact.contacts
-})
-
-export default connect(mapStateToProps, { delContact })(Contact);
+export default connect(null, { delContact })(Contact);
 
 
