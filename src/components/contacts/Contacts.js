@@ -1,8 +1,8 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 import Contact from "./Contact";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getContacts, delContact } from "../../actions/contactActions";
+import { getContacts } from "../../actions/contactActions";
 
 class Contacts extends Component {
   componentDidMount() {
